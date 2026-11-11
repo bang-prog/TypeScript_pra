@@ -33,3 +33,9 @@
 | 三項演算子 | `条件 ? A : B`。Python の `A if 条件 else B` | 05 |
 | `??` | `A ?? B`:A が `null` か `undefined` なら B。`\|\|` と違い `0` や `''` は置き換えない | 05 |
 | `?.`(オプショナルチェーン) | `A?.name`:A が `null` か `undefined` ならエラーにせず `undefined` | 05 |
+| テンプレート文字列 | バッククォート `` `...${式}...` `` で囲み、`${}` に値を埋め込む文字列。Python の f文字列 | 06 |
+| `NaN` | 「数ではない」値。`Number('12a')` の結果。falsy | 06 |
+| `padStart` / `trim` / `split` / `slice` | 前を埋めて桁をそろえる / 前後の空白を取る / 区切って配列にする / 一部を切り出す | 06 |
+| `replace` / `replaceAll` | 置き換え。JavaScript の `replace` は**最初の1つだけ**(Python と違う)。全部なら `replaceAll` | 06 |
+| 正規表現 | `/^\d{4}$/` のような文字のパターン。`.test(文字列)` で当てはまるか調べる | 06 |
+| `filter(Boolean)` | 空文字などの falsy を取り除く決まり文句 | 06 |
