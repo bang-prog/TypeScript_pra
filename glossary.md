@@ -39,3 +39,11 @@
 | `replace` / `replaceAll` | 置き換え。JavaScript の `replace` は**最初の1つだけ**(Python と違う)。全部なら `replaceAll` | 06 |
 | 正規表現 | `/^\d{4}$/` のような文字のパターン。`.test(文字列)` で当てはまるか調べる | 06 |
 | `filter(Boolean)` | 空文字などの falsy を取り除く決まり文句 | 06 |
+| ユニオン型(`\|`) | `number \| null` のように「どれか」を表す型 | 07 |
+| リテラル型 | `'even'` のように、決まった値だけを許す型。`'even' \| 'over' \| 'short'` で「3つのどれか」 | 07 |
+| 絞り込み | `if (x === null) return` などで調べたあと、TypeScript が型を狭めて扱うこと | 07 |
+| 判別可能なユニオン | `ok` や `type` のような印の項目で種類を見分けるユニオン型。`ChangeResult`・`CartAction` | 07 |
+| `switch` / `case` | 値ごとに処理を分ける。`return` か `break` しないと次の `case` に流れ込む | 07 |
+| 型ガード(`x is T`) | `true` を返したら x は T だと TypeScript に伝える関数。中身が正しいかは確かめない | 07 |
+| `unknown` | 何が入っているか全くわからない型。使う前に調べる必要がある | 07 |
+| reducer | 「今の状態」と「何が起きたか(action)」から「次の状態」を返す関数。`cartReducer` など | 07 |
