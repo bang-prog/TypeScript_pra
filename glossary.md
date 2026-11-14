@@ -52,3 +52,9 @@
 | `export default` | ファイルの主役を1つ決める。使う側は `{ }` なしで `import X from '...'`。tyoubo の画面の部品はこの形 | 08 |
 | `import type` | 型だけを持ってくる。実行するときには消える | 08 |
 | 相対パス | `./`(同じフォルダ)・`../`(1つ上)で始まるパス。`.` で始まらないものはライブラリ | 08 |
+| `throw` | エラーを投げる。Python の `raise`。その関数はそこで止まる | 09 |
+| `try` / `catch` / `finally` | エラーを受け止める。`finally` は成功しても失敗しても必ず実行(後片付け) | 09 |
+| クラス / `new` / `this` | 同じ形のものを作る型紙 / 作る / 自分自身(Python の `self`)。tyoubo で定義しているのは `ValidationError` だけ | 09 |
+| `extends` | 元のクラスを引き継ぐ(継承)。`class A extends B` は Python の `class A(B):` | 09 |
+| `instanceof` | そのクラスから作られたものか調べる。Python の `isinstance` | 09 |
+| `ValidationError` | tyoubo の「利用者に直してもらうエラー」。文がそのまま画面に出る。それ以外のエラーは「保存できませんでした」になる | 09 |
