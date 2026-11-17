@@ -58,3 +58,9 @@
 | `extends` | 元のクラスを引き継ぐ(継承)。`class A extends B` は Python の `class A(B):` | 09 |
 | `instanceof` | そのクラスから作られたものか調べる。Python の `isinstance` | 09 |
 | `ValidationError` | tyoubo の「利用者に直してもらうエラー」。文がそのまま画面に出る。それ以外のエラーは「保存できませんでした」になる | 09 |
+| スプレッド構文(`...`) | 中身を広げる。`[...xs, x]` は足した新しい配列、`{ ...o, qty: 3 }` は一部を変えた新しいオブジェクト。後ろに書いたものが勝つ | 10 |
+| 配列の分割代入 | `const [y, m, d] = 配列` で順番に取り出す。`for (const [i, x] of xs.entries())` は Python の `enumerate` | 10 |
+| `Map` | キーで値を引ける表。`set`・`get`・`has`。ないキーの `get` は `undefined`。Python の `dict` | 10 |
+| `Set` | 重複のない集まり。`add`・`has`。`[...new Set(xs)]` で重複を消す | 10 |
+| `as const` | 配列などを「書き換えない・中身はこの値そのもの」と固定する | 10 |
+| 型アサーション(`as`) | `値 as 型` で「この型だと保証する」と言い張る。実行時には確かめない | 10 |
